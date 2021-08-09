@@ -6,7 +6,7 @@ from django.test import Client  # creating test request
 
 class AdminSiteTests(TestCase):
 
-    def setUp(self): #init
+    def setUp(self):  # init
         self.client = Client()
         self.admin_user = get_user_model().objects.create_superuser(
             email='test@test.com',
